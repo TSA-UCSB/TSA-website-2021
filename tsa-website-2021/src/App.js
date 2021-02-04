@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import React, { useState } from 'react'
 import ucsb from './ucsb.mp4';
+
 export default function App() {
 
   const [loggedIn, setLoggedIn] = useState(false)
@@ -23,7 +24,9 @@ export default function App() {
                 </div>
             </div>
         </div>
-        <video autoplay loop muted>
+        <video autoPlay loop muted style = {{position: "absolute", width: "100%", 
+                                      left: "50%", top: "50%", height: "100%", objectFit: "cover", 
+                                      transform: "translate(-50%, -50%)", zIndex:"-1" }}>
         	<source src={ucsb} type="video/mp4" />
         </video>
         {/* <iframe width="725" height="480" src="https://www.youtube.com/embed/QSEPStBgwRQ?list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
