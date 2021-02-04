@@ -9,22 +9,25 @@ export default function App() {
   const [loggedIn, setLoggedIn] = useState(false)
   const [name, setName] = useState()
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          SUP
-        </p>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+              <h1>Welcome to <em>UCSB TSA</em></h1>
+              <p>UCSB Taiwanese Student Association</p>
+              <p>Homepage with full-width image gallery</p>
+                {/* <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""/></a>
+                </div> */}
+            </div>
+        </div>
+        <video autoplay="" loop="" muted>
+        	<source src="ucsb.mp4" type="video/mp4" />
+        </video>
+      </div>
+
 
       <div style={{}}>
         <Login loggedIn={loggedIn} setLoggedIn = {(bool) => setLoggedIn(bool)} setName={(name) => setName(name)}/>
