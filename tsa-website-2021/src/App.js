@@ -3,7 +3,7 @@ import './App.css';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import React, { useState } from 'react'
-
+import ucsb from './ucsb.mp4';
 export default function App() {
 
   const [loggedIn, setLoggedIn] = useState(false)
@@ -18,14 +18,15 @@ export default function App() {
               <h1>Welcome to <em>UCSB TSA</em></h1>
               <p>UCSB Taiwanese Student Association</p>
               <p>Homepage with full-width image gallery</p>
-                {/* <div class="scroll-icon">
+                <div class="scroll-icon">
                     <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""/></a>
-                </div> */}
+                </div>
             </div>
         </div>
-        <video autoplay="" loop="" muted>
-        	<source src="ucsb.mp4" type="video/mp4" />
+        <video autoplay loop muted>
+        	<source src={ucsb} type="video/mp4" />
         </video>
+        {/* <iframe width="725" height="480" src="https://www.youtube.com/embed/QSEPStBgwRQ?list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
       </div>
 
 
