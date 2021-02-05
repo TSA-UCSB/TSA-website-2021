@@ -18,7 +18,7 @@ export default function App() {
             <div class="inner">
               <h1>Welcome to <em>UCSB TSA</em></h1>
               <p>UCSB Taiwanese Student Association</p>
-              <p>Homepage with full-width image gallery</p>
+              
                 <div class="scroll-icon">
                     <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""/></a>
                 </div>
